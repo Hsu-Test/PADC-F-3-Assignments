@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.hsuyeemon.assignment_4.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#226262"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+
+            android:id="@+id/iv_curiosity_logo"
+
+            android:src="@drawable/curiosity"
+            android:layout_margin="16dp"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tv_curiosity"
+
+            android:text="curiosity"
+
+            android:layout_below="@id/iv_curiosity_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:textColor="@color/accent"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_sign_in_facebook"
+
+            android:text="@string/lbl_sign_in_facebook"
+            android:drawableLeft="@drawable/ic_facebook"
+
+            android:layout_below="@id/tv_curiosity"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:paddingLeft="16dp"
+            android:drawablePadding="26dp"
+            android:textAlignment="textStart"
+
+            android:textAllCaps="false"
+            android:background="@color/primary_dark"
+            android:textColor="@color/icons"
+            android:textSize="20sp"
+            android:foreground="@drawable/ripple_white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_sign_in_google"
+
+            android:text="@string/lbl_sign_in_google"
+            android:drawableLeft="@drawable/ic_google"
+
+            android:layout_below="@id/btn_sign_in_facebook"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:paddingLeft="16dp"
+            android:drawablePadding="26dp"
+            android:textAlignment="textStart"
+
+            android:textAllCaps="false"
+            android:background="@color/primary"
+            android:textColor="@color/icons"
+            android:textSize="20sp"
+            android:foreground="@drawable/ripple_white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_sign_in_twitter"
+
+            android:text="@string/lbl_sign_in_twitter"
+            android:drawableLeft="@drawable/ic_twitter"
+
+            android:layout_below="@id/btn_sign_in_google"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:padding="6dp"
+            android:paddingLeft="16dp"
+            android:drawablePadding="26dp"
+            android:textAlignment="textStart"
+
+            android:textAllCaps="false"
+            android:background="@color/accent"
+            android:textColor="@color/icons"
+            android:textSize="20sp"
+            android:foreground="@drawable/ripple_white"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_sign_up_email"
+
+            android:text="@string/lbl_sign_up_email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+
+            android:layout_below="@id/btn_sign_in_twitter"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:paddingTop="6dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="16dp"
+            android:drawablePadding="26dp"
+            android:textAlignment="textStart"
+
+            android:textAllCaps="false"
+            android:background="@color/secondary_text"
+            android:textSize="20sp"
+            android:textColor="@color/icons"
+            android:foreground="@drawable/ripple_white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_sign_in_email"
+
+            android:text="@string/lbl_sign_in_email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+
+            android:layout_below="@id/btn_sign_in_twitter"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="32dp"
+             android:paddingTop="6dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="16dp"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+
+            android:textAllCaps="false"
+            android:background="@color/secondary_text"
+            android:textColor="@color/icons"
+            android:textSize="20sp"
+            android:foreground="@drawable/ripple_white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/btn_terms_and_conditions"
+
+            android:text="@string/lbl_terms_and_conditions"
+
+            android:layout_below="@id/btn_sign_in_email"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="60dp"
+            android:padding="6dp"
+
+            android:foreground="@drawable/ripple_primary"
+            android:clickable="true"
+            android:textColor="@color/divider"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
